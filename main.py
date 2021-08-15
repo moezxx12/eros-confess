@@ -5,7 +5,7 @@ import random
 
 
 
-TOKEN = 'ODc2NDM3MjI3MDQ2MDYwMDcy.YRkDxg.ammun2Xz0Rvw3Mv9mXvAGzDyZQo'
+TOKEN = 'ODc2NDM3MjI3MDQ2MDYwMDcy.YRkDxg._bxZKE3Ckd2i9mkKu7xFC-Rj-6k'
 
 ARABIC_QUESTIONS = [
     "من هو بيت أسرارك؟",
@@ -189,8 +189,7 @@ async def on_message(message):
             return
         elif user_msg.lower() == "c!help":
             embed=discord.Embed(title="Confessional Help", url="https://discord.com/api/oauth2/authorize?client_id=876437227046060072&permissions=259846043712&scope=bot", description="This is an embed that will show how to build an embed and the different components", color=0x000000)
-            embed.set_author(name=message.author,
-                             icon_url=message.author.avatar_url)
+            embed.set_author(name=message.author)
             
             embed.add_field(name='**ar!question**',
                             value='*Generates a question in Arabic*', inline=False)
